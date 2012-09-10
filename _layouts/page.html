@@ -1,0 +1,32 @@
+---
+layout:           default
+---
+<div id="head">
+    
+    <div id="header">
+        <div class="inner">
+            <h1 style="color:#000000">龙荩草</h1>
+            <h2>守候的魅力</h2>
+            
+            <div class="nav right">
+                <a href="https://github.com/nyflxp" class="button" style="border:0 none;"><small>Follow me on</small>GitHub</a>
+                <a href="/blog" title="Thoughts On Something">Blog</a>
+                <a href="/project" title="Projects Ongoing">Project</a>
+                <a href="/wiki" title="Wiki" >Wiki</a>
+                <a href="/me" title="About BeiYuu" >AboutMe</a>
+                <a href="{{ site.feed }}" rel="feed" title="Subscribes The Feed" target="_blank">RSS</a>
+            </div>
+        </div>
+        <!-- .nav -->
+    </div><!-- #header -->
+</div><!-- #head -->
+<div id="content-wrapper">
+    {{ content }}
+</div><!-- #content --> 
+<div id="footer">
+    <div class="copyright right">
+        {% for line in site.copyright %}
+        <p>{{ line }}</p>
+        {% endfor %}
+    </div>
+</div><!-- #footer -->
