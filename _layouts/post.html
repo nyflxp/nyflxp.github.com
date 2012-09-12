@@ -1,8 +1,89 @@
----
-layout: page
----
-<link rel="stylesheet" href="/js/prettify/prettify.css" />
-<div class="entry">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="generator" content="Jekyll" />
+    <meta name="author" content="{{ site.author.name }}" />
+    <meta name="description" content="{{ site.description }}" />
+    <link rel="stylesheet" href="/css/default.css" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
+    <link rel="shortcut icon" href="/images/x-ion.ico" type="image/x-icon" />
+  
+    <script type="text/javascript" src="http://beiyuu.com/js/jquery-1.7.1.min.js"></script>
+    
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" href="/js/prettify/prettify.css" />
+    <script type="text/javascript" src="http://beiyuu.com/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript">
+        var BYB = {};
+    </script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>龙荩草 by nyflxp</title>
+  </head>
+
+  <body>
+
+ <header>
+      <div class="inner">
+        <h1>龙荩草</h1>
+        <h2>守候的魅力</h2>
+            <a href="https://github.com/nyflxp" class="button"><small>Follow me on</small>GitHub</a>
+        <div style="font-color:#fff;float:right;" class="nav">
+            <a href="/blog" title="Thoughts On Something">Blog</a>&nbsp;&nbsp;&nbsp;
+            <a href="/project" title="Projects Ongoing">Project</a>&nbsp;&nbsp;&nbsp;
+            <a href="/wiki" title="Wiki" >Wiki</a>&nbsp;&nbsp;&nbsp;
+            <a href="/about" title="About BeiYuu" >AboutMe</a>&nbsp;&nbsp;&nbsp;
+            <a href="{{ site.feed }}" rel="feed" title="Subscribes The Feed" target="_blank">RSS</a>
+        </div>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+         {{ content }}
+       <script type="text/javascript">
+        BYB.includeScript = function(file,callback){
+            var _doc = document.getElementsByTagName('head')[0];
+            var js = document.createElement('script');
+            js.setAttribute('type', 'text/javascript');
+            js.setAttribute('src', file);
+            _doc.appendChild(js);
+
+            if (!/*@cc_on!@*/0) { //if not IE
+                //Firefox2、Firefox3、Safari3.1+、Opera9.6+ support js.onload
+                js.onload = function () {
+                    callback();
+                }
+            } else {
+                //IE6、IE7 support js.onreadystatechange
+                js.onreadystatechange = function () {
+                    if (js.readyState == 'loaded' || js.readyState == 'complete') {
+                        callback();
+                    }
+                }
+            }
+            return false;
+        }
+
+        //if(!window.jQuery){
+            //BYB.includeScript('http://beiyuu.com/js/jquery-1.7.1.min.js',BYB.readyFunction);
+        //}else{
+            //BYB.readyFunction();
+        //}
+    </script>
+        
+    
+    <div class="entry">
     {{ content }}
     如果您觉得有帮助，就尽情分享或者<a href="/about" target="_blank">关注我吧</a>：<br/>
     <!--<a href='http://me.alipay.com/beiyuu' target="_blank" style="float:left;"><img src='https://img.alipay.com/sys/personalprod/style/mc/btn-index.png' style="display:inline" /></a>-->
@@ -148,3 +229,24 @@ layout: page
         BYB.includeScript('http://v2.jiathis.com/code/jia.js',function(){})
     });
 </script>
+    
+    </section>
+
+        <aside id="sidebar">
+          <div class="copyright right">
+          
+        </div>
+        </aside>
+      </div>
+    </div>
+    
+    
+    
+    
+  </body>
+</html>      
+            
+       
+
+
+
