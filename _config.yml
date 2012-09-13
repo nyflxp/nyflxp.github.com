@@ -6,13 +6,13 @@ paginate:         6
 permalink:        /:title
 
 title:            nyflxp.tk
-url:              http://nyflxp.tk
+url:              http://nieyafei.tk
 feed:             /atom.xml
 author:
     name:         nyflxp
     twitter:      twitter.com/nyflxp
 description:      "nyflxp\'s Blog"
-author_info:      <a href="http://beiyuu.com/about">Nyflxp</a>
+author_info:      <a href="http://nieyafei.tk/about">Nyflxp</a>
 
 copyright:
-    - Design by <a href="http://beiyuu.com/about" title="nyflxp" target="_blank">nyflxp</a> &copy; Copyright 2012
+    - Design by <a href="http://nieyafei.tk/about" title="nyflxp" target="_blank">nyflxp</a> &copy; Copyright 2012

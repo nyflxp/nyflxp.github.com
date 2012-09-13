@@ -5,9 +5,10 @@ description: Github本身就是不错的代码社区，他也提供了一些其�
 category: blog
 ---
 # [{{ page.title }}][1]
-2012-02-22 By {{ site.author_info }}
+2012-09-10 By {{ site.author_info }}
 
-[Github][]很好的将代码和社区联系在了一起，于是发生了很多有趣的事情，世界也因为他美好了一点点。Github作为现在最流行的代码仓库，已经得到很多大公司和项目的青睐，比如[jQuery][]、[Twitter][]等。为使项目更方便的被人理解，介绍页面少不了，甚至会需要完整的文档站，Github替你想到了这一点，他提供了[Github Pages][]的服务，不仅可以方便的为项目建立介绍站点，也可以用来建立个人博客。
+[Github][] 是一个用于使用Git版本控制系统的项目的基于互联网的存取服务。它是由GitHub公司（先前被称作用Logical Awesome）的开发者Chris Wanstrath, PJ Hyett, 和 Tom Preston-Werner 使用Ruby on Rails写成的。GitHub同时提供商业账户和为开源项目提供的免费账户。根据在2009年的Git用户调查，GitHub是最流行的Git存取站点。[2]
+它提供了像 feeds，followers 和显示开发者们怎样在他们的版本库的版本上工作的网络图表，很好的将代码和社区联系在了一起，于是发生了很多有趣的事情，世界也因为他美好了一点点。Github作为现在最流行的代码仓库，已经得到很多大公司和项目的青睐，比如[jQuery][]、[Twitter][]等。为使项目更方便的被人理解，介绍页面少不了，甚至会需要完整的文档站，Github替你想到了这一点，他提供了[Github Pages][]的服务，不仅可以方便的为项目建立介绍站点，也可以用来建立个人博客。
 
 Github Pages有以下几个优点：
 
@@ -32,7 +33,7 @@ Github Pages有以下几个优点：
 
 域名的购买不用多讲，注册、选域名、支付，有网购经验的都毫无压力，优惠码也遍地皆是。域名的配置需要提醒一下，因为伟大英明的GFW的存在，我们必须多做些事情。
 
-流传Godaddy的域名解析服务器被墙掉，导致域名无法访问，后来这个事情在[BeiYuu][]也发生了，不得已需要把域名解析服务迁移到国内比较稳定的服务商处，这个迁移对于域名来说没有什么风险，最终的控制权还是在Godaddy那里，你随时都可以改回去。
+流传Godaddy的域名解析服务器被墙掉，导致域名无法访问，后来这个事情在[nyflxp][]也发生了，不得已需要把域名解析服务迁移到国内比较稳定的服务商处，这个迁移对于域名来说没有什么风险，最终的控制权还是在Godaddy那里，你随时都可以改回去。
 
 我们选择[DNSPod][]的服务，他们的产品做得不错，易用、免费，收费版有更高端的功能，暂不需要。注册登录之后，按照DNSPod的说法，只需三步（我们插入一步）：
 
@@ -53,23 +54,23 @@ Git是版本管理的未来，他的优点我不再赘述，相关资料很多�
 下载安装客户端之后，各个系统的配置就类似了，我们使用windows作为例子，Linux和Mac与此类似。
 
 在Windows下，打开Git Bash，其他系统下面则打开终端（Terminal）：
-![Git Bash](/images/githubpages/bootcamp_1_win_gitbash.jpg)
+![Git Bash](../githubpages/bootcamp_1_win_gitbash.jpg)
 
 ###1、检查SSH keys的设置
 首先我们需要检查你电脑上现有的ssh key：
 
-    $ cd ~/.ssh
+     cd ~/.ssh
 
 如果显示“No such file or directory”，跳到第三步，否则继续。
 
 ###2、备份和移除原来的ssh key设置：
 因为已经存在key文件，所以需要备份旧的数据并删除：
 
-    $ ls
+     ls
     config	id_rsa	id_rsa.pub	known_hosts
-    $ mkdir key_backup
-    $ cp id_rsa* key_backup
-    $ rm id_rsa*
+     mkdir key_backup
+     cp id_rsa* key_backup
+     rm id_rsa*
 
 ###3、生成新的SSH Key：
 输入下面的代码，就可以生成新的key文件，我们只需要默认设置就好，所以当需要输入文件名的时候，回车就好。
@@ -84,7 +85,7 @@ Git是版本管理的未来，他的优点我不再赘述，相关资料很多�
     Enter same passphrase again:<再次输入加密串>
 
 最后看到这样的界面，就成功设置ssh key了：
-![ssh key success](/images/githubpages/ssh-key-set.png)
+![ssh key success](../githubpages/ssh-key-set.png)
 
 ###4、添加SSH Key到GitHub：
 在本机设置SSH Key之后，需要添加到GitHub上，以完成SSH链接的设置。
@@ -92,17 +93,17 @@ Git是版本管理的未来，他的优点我不再赘述，相关资料很多�
 用文本编辑工具打开id_rsa.pub文件，如果看不到这个文件，你需要设置显示隐藏文件。准确的复制这个文件的内容，才能保证设置的成功。
 
 在GitHub的主页上点击设置按钮：
-![github account setting](/images/githubpages/github-account-setting.png)
+![github account setting](../githubpages/github-account-setting.png)
 
 选择SSH Keys项，把复制的内容粘贴进去，然后点击Add Key按钮即可：
-![set ssh keys](/images/githubpages/bootcamp_1_ssh.jpg)
+![set ssh keys](../githubpages/bootcamp_1_ssh.jpg)
 
 PS：如果需要配置多个GitHub账号，可以参看这个[多个github帐号的SSH key切换](http://omiga.org/blog/archives/2269)，不过需要提醒一下的是，如果你只是通过这篇文章中所述配置了Host，那么你多个账号下面的提交用户会是一个人，所以需要通过命令`git config --global --unset user.email`删除用户账户设置，在每一个repo下面使用`git config --local user.email '你的github邮箱@mail.com'` 命令单独设置用户账户信息
 
 ###5、测试一下
 可以输入下面的命令，看看设置是否成功，`git@github.com`的部分不要修改：
 
-    $ ssh -T git@github.com
+     ssh -T git@github.com
 
 
 如果是下面的反应：
@@ -121,8 +122,8 @@ PS：如果需要配置多个GitHub账号，可以参看这个[多个github帐�
 
 Git会根据用户的名字和邮箱来记录提交。GitHub也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的，名字必须是你的真名，而不是GitHub的昵称。
 
-    $ git config --global user.name "你的名字"
-    $ git config --global user.email "your_email@youremail.com"
+     git config --global user.name "你的名字"
+     git config --global user.email "your_email@youremail.com"
 
 ####设置GitHub的token
 
@@ -131,12 +132,12 @@ Git会根据用户的名字和邮箱来记录提交。GitHub也是用这些信�
 有些工具没有通过SSH来链接GitHub。如果要使用这类工具，你需要找到然后设置你的API Token。
 
 在GitHub上，你可以点击*Account Setting > Account Admin*：
-![set ssh keys](/images/githubpages/bootcamp_1_token.jpg)
+![set ssh keys](../githubpages/bootcamp_1_token.jpg)
 
 然后在你的命令行中，输入下面的命令，把token添加进去：
 
-    $ git config --global user.name "你的名字"
-    $ git config --global user.token 0123456789your123456789token
+     git config --global user.name "你的名字"
+     git config --global user.token 0123456789your123456789token
 
 如果你改了GitHub的密码，需要重新设置token。
 
@@ -148,13 +149,13 @@ Git会根据用户的名字和邮箱来记录提交。GitHub也是用这些信�
 
 ###User & Organization Pages
 想建立个人博客是用的第一种，形如`beiyuu.github.com`这样的可访问的站，每个用户名下面只能建立一个，创建之后点击`Admin`进入项目管理，可以看到是这样的：
-![user pages](/images/githubpages/user-pages.png)
+![user pages](/../githubpages/user-pages.png)
 而普通的项目是这样的，即使你也是用的`othername.github.com`：
-![other pages](/images/githubpages/other-pages.png)
+![other pages](/../githubpages/other-pages.png)
 
 创建好`username.github.com`项目之后，提交一个`index.html`文件，然后`push`到GitHub的`master`分支（也就是普通意义上的主干）。第一次页面生效需要一些时间，大概10分钟左右。
 
-生效之后，访问`username.github.com`就可以看到你上传的页面了，[beiyuu.github.com][7]就是一个例子。
+生效之后，访问`username.github.com`就可以看到你上传的页面了，[nyflxp.github.com][7]就是一个例子。
 
 关于第二种项目`pages`，简单提一下，他和用户pages使用的后台程序是同一套，只不过它的目的是项目的帮助文档等跟项目绑定的内容，所以需要在项目的`gh-pages`分支上去提交相应的文件，GitHub会自动帮你生成项目pages。具体的使用帮助可以参考[Github Pages][]的官方文档：
 
@@ -167,7 +168,7 @@ Git会根据用户的名字和邮箱来记录提交。GitHub也是用这些信�
 
     blog.beiyuu.com
 
-需要提醒的一点是，如果你使用形如`beiyuu.com`这样的一级域名的话，需要在DNS处设置A记录到`207.97.227.245`（**此处每个人的地址都不同，需要根据Github提供的地址自行修改**），而不是在DNS处设置为CNAME的形式，否则可能会对其他服务（比如email）造成影响。
+需要提醒的一点是，如果你使用形如`sina.com`这样的一级域名的话，需要在DNS处设置A记录到`207.97.227.245`（**此处每个人的地址都不同，需要根据Github提供的地址自行修改**），而不是在DNS处设置为CNAME的形式，否则可能会对其他服务（比如email）造成影响。
 
 设置成功后，根据DNS的情况，最长可能需要一天才能生效，耐心等待吧。
 
@@ -235,7 +236,7 @@ Jekyll的配置写在_config.yml文件中，可配置项有很多，我们不去
 
 * `permalink: /:title` /github-pages
 
-自定义项的内容，例如我们定义了`title:BeiYuu的博客`这样一项，那么你就可以在文章中使用`{ { site.title }}`来引用这个变量了，非常方便定义些全局变量。
+自定义项的内容，例如我们定义了`title:nyflxp的博客`这样一项，那么你就可以在文章中使用`{ { site.title }}`来引用这个变量了，非常方便定义些全局变量。
 
 ###YAML Front Matter和模板变量
 对于使用YAML定义格式的文章，Jekyll会特别对待，他的格式要求比较严格，必须是这样的形式：
@@ -262,7 +263,7 @@ Jekyll的配置写在_config.yml文件中，可配置项有很多，我们不去
 现在专做评论模块的产品有很多，比如[Disqus][]，还有国产的[多说][]，Disqus对现在各种系统的支持都比较全面，到写博客为止，多说现在仅是WordPress的一个插件，所以我这里暂时也使用不了，多说与国内的社交网络紧密结合，还是有很多亮点的，值得期待一下。我先选择了Disqus。
 
 注册账号什么的就不提了，Disqus支持很多的博客平台，参见下图：
-![Disqus sites](/images/githubpages/disqus-site.jpg)
+![Disqus sites](/githubpages/disqus-site.jpg)
 
 我们选择最下面的`Universal Code`就好，然后会看到一个介绍页面，把下面这段代码复制到你的模板里面，可以只复制到显示文章的模板中：
 
@@ -307,23 +308,23 @@ Google的高亮插件使用也比较方便，只需要在`<pre>`的标签上加�
 
 然后用Gem安装jekyll
 
-    $ gem install jekyll
+     gem install jekyll
 
 不过一般如果有出错提示，你可能需要这样安装：
 
-    $ sudo gem install jekyll
+     sudo gem install jekyll
 
 我到了这一步的时候总是提示错误`Failed to build gem native extension`，很可能的一个原因是没有安装rvm，[rvm的安装][16]可以参考这里，或者敲入下面的命令：
 
-    $ curl -L https://get.rvm.io | bash -s stable --ruby
+     curl -L https://get.rvm.io | bash -s stable --ruby
 
 然后还需要安装Markdown的解释器，这个需要在你的_config.yml里面设置`markdown:rdiscount`：
 
-    $ gem install jekyll rdiscount
+     gem install jekyll rdiscount
 
 好了，如果一切顺利的话，本地环境就基本搭建完成了，进入之前我们建立的博客目录，运行下面的命令：
 
-    $ jekyll --server
+     jekyll --server
 
 这个时候，你就可以通过`localhost:4000`来访问了。还有关于[jekyll bootstrap][17]的资料，需要自己修改调试的，可以研究一下。
 
@@ -335,7 +336,7 @@ Google的高亮插件使用也比较方便，只需要在`<pre>`的标签上加�
 如果你跟着这篇不那么详尽的教程，成功搭建了自己的博客，恭喜你！剩下的就是保持热情的去写自己的文章吧。
 
 
-[BeiYuu]:    http://beiyuu.com  "BeiYuu"
+[nyflxp]:    http://nieyafei.tk  "BeiYuu"
 [Github]:   http://github.com "Github"
 [jQuery]:   https://github.com/jquery/jquery "jQuery@github"
 [Twitter]:  https://github.com/twitter/bootstrap "Twitter@github"
