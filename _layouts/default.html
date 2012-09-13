@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * Author:nyflxp
+    -->
+    <meta charset="utf-8" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="generator" content="Jekyll" />
+    <meta name="author" content="{{ site.author.name }}" />
+    <meta name="description" content="{{ site.description }}" />
+    <link rel="stylesheet" href="/css/default.css" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
+    <link rel="shortcut icon" href="/images/x-ion.ico" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/style9.css">
+    <link rel="stylesheet" type="text/css" href="/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style3.css"/>
+    <link rel="stylesheet" type="text/css" href="/stylesheet/print.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheet/pygment_trac.css"/>
+    <link rel="stylesheet" type="text/css" href="/stylesheet/stylesheet.css"/>
+    <script type="text/javascript" src="/js/modernizr.custom.86080.js"></script>
+    <script type="text/javascript" src="http://beiyuu.com/js/jquery-1.7.1.min.js"></script>
+    <link rel="alternate" type="application/rss+xml" title="Chris Jennings RSS Feed" href="http://chrisjennings.com/feed/" />
+    <link rel="pingback" href="http://chrisjennings.com/xmlrpc.php" />
+    <link href="http://chrisjennings.com/wp-content/themes/underthesea/style.css" type="text/css" rel="stylesheet" media="screen" />
+     <style type="text/css">
+      #mycard li{
+          background-color: #fff;
+          opacity:0.57;
+          filter:alpha(opacity=57);
+      }
+      .ca-icon{
+        opacity:1;
+        filter:alpha(opacity=100);
+      }
+
+  </style>
+    
+    <script type="text/javascript">
+        var BYB = {};
+    </script>
+</head>
+<body >
+    {{ content }}
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>-->
+    <script type="text/javascript">
+        BYB.includeScript = function(file,callback){
+            var _doc = document.getElementsByTagName('head')[0];
+            var js = document.createElement('script');
+            js.setAttribute('type', 'text/javascript');
+            js.setAttribute('src', file);
+            _doc.appendChild(js);
+
+            if (!/*@cc_on!@*/0) { //if not IE
+                //Firefox2、Firefox3、Safari3.1+、Opera9.6+ support js.onload
+                js.onload = function () {
+                    callback();
+                }
+            } else {
+                //IE6、IE7 support js.onreadystatechange
+                js.onreadystatechange = function () {
+                    if (js.readyState == 'loaded' || js.readyState == 'complete') {
+                        callback();
+                    }
+                }
+            }
+            return false;
+        }
+
+        //if(!window.jQuery){
+            //BYB.includeScript('http://beiyuu.com/js/jquery-1.7.1.min.js',BYB.readyFunction);
+        //}else{
+            //BYB.readyFunction();
+        //}
+    </script>
+</body>
+</html>
