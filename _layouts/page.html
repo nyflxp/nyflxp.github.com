@@ -33,6 +33,51 @@
           .wiki h2{
             cursor:pointer;
           }
+          #uldiv{
+            left: 20px;
+            position: fixed;
+            top: 130px;
+            list-style: none outside none;
+            }
+          #uldiv a svg{
+               position: absolute;
+            }  
+         #uldiv a .github{
+               left: 2px;
+                top: 3px;
+           }
+          #uldiv a .twitter{
+               left: 3px;
+                top: 2px;
+           }
+           #uldiv a .sina-weibo{
+               left: 6px;
+                top: 8px;
+           }
+           #uldiv a .tencent-weibo{
+               left: 4px;
+                top: 6px;
+           }
+           
+           #uldiv li {
+              -moz-transition: background-color 1s ease-in-out 0s;
+              background-color: rgba(0, 0, 0, 0.4);
+              border-radius: 35px 35px 35px 35px;
+              height: 35px;
+              line-height: 35px;
+              margin-top: 9px;
+              overflow: hidden;
+              text-align: center;
+              width: 35px;
+          }
+           #uldiv a{
+              display: inline-block;
+              height: 100%;
+              position: relative;
+              width: 100%;
+              color: #578CCA;
+              text-decoration: none;
+             }
     </style>
   </head>
 
@@ -90,7 +135,7 @@
         </section>
 
         <aside id="sidebar">
-          <ul style="left: 20px;position: fixed;top: 130px;list-style: none outside none;">
+          <ul id="uldiv">
             <li>
               <a target="_blank" href="https://github.com/nyflxp">
                 <svg class="github" xmlns="http://www.w3.org/2000/svg" version="1.1" height="40" width="40">
