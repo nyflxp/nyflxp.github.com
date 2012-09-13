@@ -86,6 +86,14 @@
                background-color: rgba(0, 0, 0, 0.6);
 
              }
+             #backtop{
+          		width:100px;
+        			height:100px;
+        			left:25px;
+        			bottom:20px;
+        			position:fixed;
+      			
+      		}
     </style>
   </head>
 
@@ -142,7 +150,12 @@
     </script>
         </section>
 
-        <aside id="sidebar">            
+        <aside id="sidebar">
+        <div style="margin-left:10px;">
+          <a href="https://github.com/nyflxp/nyflxp.github.com">
+          <img src="/tubiao/catlover.png"/>  
+          </a>
+        </div>
           <div class="copyright right">
             {% for line in site.copyright %}
             <p>{{ line }}</p>
@@ -151,6 +164,11 @@
         </aside>
       </div>
     </div>
+    <div id="backtop" style="left:20px; display: block;">
+  	  <a href="#top">
+		    <span><img src="/tubiao/sd.png"/></span>
+		    </a>
+	  </div>
 <div id="uldiv">
   
   <!-- GitHub -->
