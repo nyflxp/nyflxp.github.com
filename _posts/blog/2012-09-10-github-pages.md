@@ -5,7 +5,7 @@ description: Github本身就是不错的代码社区，他也提供了一些其�
 category: blog
 ---
 # [{{ page.title }}][1]
-2012-02-22 By {{ site.author_info }}
+2012-09-10 By {{ site.author_info }}
 
 [Github][]GitHub 是一个用于使用Git版本控制系统的项目的基于互联网的存取服务。它是由GitHub公司（先前被称作用Logical Awesome）的开发者Chris Wanstrath, PJ Hyett, 和 Tom Preston-Werner 使用Ruby on Rails写成的。GitHub同时提供商业账户和为开源项目提供的免费账户。根据在2009年的Git用户调查，GitHub是最流行的Git存取站点。[2]
 它提供了像 feeds，followers 和显示开发者们怎样在他们的版本库的版本上工作的网络图表，很好的将代码和社区联系在了一起，于是发生了很多有趣的事情，世界也因为他美好了一点点。Github作为现在最流行的代码仓库，已经得到很多大公司和项目的青睐，比如[jQuery][]、[Twitter][]等。为使项目更方便的被人理解，介绍页面少不了，甚至会需要完整的文档站，Github替你想到了这一点，他提供了[Github Pages][]的服务，不仅可以方便的为项目建立介绍站点，也可以用来建立个人博客。
