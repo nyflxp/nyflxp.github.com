@@ -134,8 +134,16 @@
     </script>
         </section>
 
-        <aside id="sidebar">
-          <ul id="uldiv">
+        <aside id="sidebar">            
+          <div class="copyright right">
+            {% for line in site.copyright %}
+            <p>{{ line }}</p>
+            {% endfor %}
+        </div>
+        </aside>
+      </div>
+    </div>
+         <ul id="uldiv">
             <li>
               <a target="_blank" href="https://github.com/nyflxp">
                 <svg class="github" xmlns="http://www.w3.org/2000/svg" version="1.1" height="40" width="40">
@@ -174,16 +182,7 @@
               </a>
             </li>
             
-          </ul>        
-        
-          <div class="copyright right">
-            {% for line in site.copyright %}
-            <p>{{ line }}</p>
-            {% endfor %}
-        </div>
-        </aside>
-      </div>
-    </div>
+          </ul> 
   </body>
 </html>      
             
