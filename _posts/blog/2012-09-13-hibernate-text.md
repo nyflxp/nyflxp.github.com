@@ -55,7 +55,7 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 * 在xml文件中添加映射信息：
 
 	<?xmlversion="1.0"encoding="UTF-8"?>
-	<!DOCTYPEhibernate--‐mappingPUBLIC"-/Hibernate/HibernateMappingDTD3.0//EN""http://hibernate.sourceforge.net/hibernate--‐mapping--‐3.0.dtd">
+	<!DOCTYPEhibernate-mappingPUBLIC"-/Hibernate/HibernateMappingDTD3.0//EN""http://hibernate.sourceforge.net/hibernate--‐mapping--‐3.0.dtd">
 	<hibernate--‐mapping package="com.kaishengit.pojo">
 	  <class name="User" table="t_user">
 			<id name="id" column="id">
@@ -72,7 +72,7 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 * 创建Hibernate配置文件（即连接数据库）：
 
 	<?xml version="1.0" encoding="UTF--‐8"?>
-	<!DOCTYPE hibernate--‐configuration PUBLIC "-/Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate--‐configuration--‐3.0.dtd">
+	<!DOCTYPE hibernate-configuration PUBLIC "-/Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate--‐configuration--‐3.0.dtd">
 	<hibernate-configuration>
 		<session-factory>
 			//连接数据库
@@ -217,7 +217,7 @@ clear方法和flush方法：
 
 [nyflxp]： http://nieyafei.tk  "Nyflxp"
 [1]:    {{ page.url}}  ({{ page.title }})
-[jar]：		http://www.hibernate.org/
-[Hibernate]： http://www.hibernate.org/
-[PenJpa]：	http://openjpa.apache.org/
-[mybatis]：	https://code.google.com/p/mybatis/
+[jar]：		http://www.hibernate.org/ "jar"
+[Hibernate]： http://www.hibernate.org/ "Hibernate"
+[PenJpa]：	http://openjpa.apache.org/ "PenJpa"
+[mybatis]：	https://code.google.com/p/mybatis/ "mybatis"
