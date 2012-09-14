@@ -11,7 +11,7 @@ description: Hibernate是一个开放源代码的对象关系映射框架，它�
 
 Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Transaction、Query、Criteria和Configuration。这6个核心接口在任何开发中都会用到。通过这些接口，不仅可以对持久化对象进行存取，还能够进行事务控制。
 
-<img src="http://stacktrace.in/wp-content/uploads/2012/06/Hibernate_logo_a1.png" width="500px" height="150";/>
+<img src="http://stacktrace.in/wp-content/uploads/2012/06/Hibernate_logo_a1.png" width="500px" height="150"/>
 
 ##ORM(对象关系映射)
 
@@ -53,26 +53,26 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 
 *创建一个类.class ,随后创建一个xml文件，最好命名和类的名字一样，比如User.class,User.hbm.xml
 *在xml文件中添加映射信息：
-<pre>
-<?xmlversion="1.0"encoding="UTF--‐8"?>
-<!DOCTYPEhibernate--‐mappingPUBLIC"--‐//Hibernate/HibernateMappingDTD3.0//EN""http://hibernate.sourceforge.net/hibernate--‐mapping--‐3.0.dtd">
-<hibernate--‐mapping package="com.kaishengit.pojo">
-  <class name="User" table="t_user">
-		<id name="id" column="id">
-			<generator class="native"></generator>
-		</id>
-		<property name="userName" column="username">
-		</property>
-		
-		<property name="userPwd">
-		</property>
-	</class>
-</hibernate--‐mapping>
-</pre>
+
+	<?xmlversion="1.0"encoding="UTF--‐8"?>
+	<!DOCTYPEhibernate--‐mappingPUBLIC"--‐//Hibernate/HibernateMappingDTD3.0//EN""http://hibernate.sourceforge.net/hibernate--‐mapping--‐3.0.dtd">
+	<hibernate--‐mapping package="com.kaishengit.pojo">
+	  <class name="User" table="t_user">
+			<id name="id" column="id">
+				<generator class="native"></generator>
+			</id>
+			<property name="userName" column="username">
+			</property>
+			
+			<property name="userPwd">
+			</property>
+		</class>
+	</hibernate-mapping>
+
 *创建Hibernate配置文件（即连接数据库）：
-<pre>
+
 	<?xml version="1.0" encoding="UTF--‐8"?>
-<!DOCTYPE hibernate--‐configuration PUBLIC "--‐//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate--‐configuration--‐3.0.dtd">
+	<!DOCTYPE hibernate--‐configuration PUBLIC "--‐//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate--‐configuration--‐3.0.dtd">
 	<hibernate-configuration>
 		<session-factory>
 			//连接数据库
@@ -103,12 +103,12 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 			
 		</session-factory>
 	</hibernate-configuration>
-</pre>
+
 *运行测试：
 
 运行Hibernate<save>：
 
-<pre>
+
 	User user = new User();
 	user.setUserName("fan");
 	user.setUserPwd("123");
@@ -118,36 +118,35 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 	Transaction tran = session.beginTransaction();
 	session.save(user);
 	tran.commit();
-</pre>
+
 
 运行Hibernate<load delete>:
 
-<pre>
 	User user =(User) session.load(User.class,1);
 	session.delete(user);
-</pre>
+
 
 运行Hibernate<Query>
 
-<pre>
+
 	Session session = factory.getCurrentSession();
 	session.beginTransaction();
 	List<User> userList =session.createQuery("fromUser").list();
 	for(User user:userList){
 	System.out.println(user.getUserName());
 	}
-</pre>
+
 
 运行Hibernate<Update>:
 
-<pre>
+
 	Session session = factory.getCurrentSession();
 	session.beginTransaction();
 	User user = (User) session.load(User.class,2);
 	user.setUserName("Alex");
 	session.update(user);
 	session.getTransaction().commit();
-</pre>
+
 
 ##Hibernate持久化对象的生命周期
 
