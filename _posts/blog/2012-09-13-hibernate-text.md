@@ -19,9 +19,9 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 
 ##ORM框架
 
-* [Hibernate][]
-* [PenJpa][]
-* [mybatis][]
+* [Hibernate][2]
+* [PenJpa][3]
+* [mybatis][5]
 
 优点：
 
@@ -38,7 +38,7 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 *4.创建Hibernate配置文件（hibernate.cfg.xml）
 *5.测试运行
 
-导入[jar][]包之后,创建持久化类(pojo):
+导入[jar][4]包之后,创建持久化类(pojo):
 
 * pojo:Plain Ordinary Java Object(无格式的Java对象)
 * Hibernate对pojo的要求：
@@ -54,8 +54,6 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 * 创建一个类.class ,随后创建一个xml文件，最好命名和类的名字一样，比如User.class,User.hbm.xml
 * 在xml文件中添加映射信息：
 
-	<?xmlversion="1.0"encoding="UTF-8"?>
-	<!DOCTYPEhibernate-mappingPUBLIC"-/Hibernate/HibernateMappingDTD3.0//EN""http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 	<hibernate-mapping package="com.kaishengit.pojo">
 	  <class name="User" table="t_user">
 			<id name="id" column="id">
@@ -70,9 +68,6 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 	</hibernate-mapping>
 
 * 创建Hibernate配置文件（即连接数据库）：
-
-	<?xml version="1.0" encoding="UTF--‐8"?>
-	<!DOCTYPE hibernate-configuration PUBLIC "-/Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate--‐configuration--‐3.0.dtd">
 	<hibernate-configuration>
 		<session-factory>
 			//连接数据库
@@ -216,8 +211,8 @@ clear方法和flush方法：
 
 
 [nyflxp]： http://nieyafei.tk  "Nyflxp"
-[jar]：		http://www.hibernate.org/ "jar"
-[Hibernate]： http://www.hibernate.org/ "Hibernate"
-[PenJpa]：	http://openjpa.apache.org/ "PenJpa"
-[mybatis]：	https://code.google.com/p/mybatis/ "mybatis"
+[4]：		http://www.hibernate.org/ "jar"
+[2]： http://www.hibernate.org/ "Hibernate"
+[3]：	http://openjpa.apache.org/ "PenJpa"
+[5]：	https://code.google.com/p/mybatis/ "mybatis"
 [1]:    {{ page.url}}  ({{ page.title }})
