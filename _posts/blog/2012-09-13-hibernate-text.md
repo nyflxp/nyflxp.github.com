@@ -19,9 +19,9 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 
 ##ORM框架
 
-*[Hibernate][]
-*[PenJpa][]
-*[mybatis][]
+* [Hibernate][]
+* [PenJpa][]
+* [mybatis][]
 
 优点：
 
@@ -38,7 +38,7 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 *4.创建Hibernate配置文件（hibernate.cfg.xml）
 *5.测试运行
 
-导入[jar][]包之后,创建持久化类(pojo):
+导入[jar]包之后,创建持久化类(pojo):
 
 * pojo:Plain Ordinary Java Object(无格式的Java对象)
 * Hibernate对pojo的要求：
@@ -90,14 +90,14 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 			<property name="hibernate.c3p0.timeout">5000</property>
 			<property name="hibernate.c3p0.max_statements">100</property>
 			<!-- 检查连接池中所有空闲连接的间隔时间，单位为秒（要注意的是MySQL的自动关闭空闲超过8小时连接的机制） -->
-			<property name="hibernate.c3p0.idle_test_period">3000</property>
+			<property name="hibernate.c3p0.idle-test-period">3000</property>
 			<!--当连 接池中的连接耗尽的时候c3p0一次同时获取的连接数. --> 
 			<property name="hibernate.c3p0.acquire_increment">2</property>
 			<!-- 每次都验证连接是否可用 -->
 			<property name="hibernate.c3p0.validate">false</property>
 			
 			<property name="hibernate.show_sql">true</property>//显示sql
-			<property name="current_session_context_class">thread</property>//本地jdbc事务配置
+			<property name="current-session-context_class">thread</property>//本地jdbc事务配置
 			
 			<mapping resource="com/kaishengit/pojo/user.hbm.xml"/>//连接类的ORM
 			
@@ -175,7 +175,7 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 
 * 三种状态的转换：
 
-<img src="http://p.blog.csdn.net/images/p_blog_csdn_net/lenotang/hibernate3_ch3_1.gif"/>
+<img src="http://p.blog.csdn.net/images/p-blog-csdn-net/lenotang/hibernate3-ch3-1.gif"/>
 
 load和get方法：
 
