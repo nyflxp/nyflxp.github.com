@@ -54,8 +54,8 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 * 创建一个类.class ,随后创建一个xml文件，最好命名和类的名字一样，比如User.class,User.hbm.xml
 * 在xml文件中添加映射信息：
 
-	<?xmlversion="1.0"encoding="UTF--‐8"?>
-	<!DOCTYPEhibernate--‐mappingPUBLIC"--‐//Hibernate/HibernateMappingDTD3.0//EN""http://hibernate.sourceforge.net/hibernate--‐mapping--‐3.0.dtd">
+	<?xmlversion="1.0"encoding="UTF-8"?>
+	<!DOCTYPEhibernate--‐mappingPUBLIC"-/Hibernate/HibernateMappingDTD3.0//EN""http://hibernate.sourceforge.net/hibernate--‐mapping--‐3.0.dtd">
 	<hibernate--‐mapping package="com.kaishengit.pojo">
 	  <class name="User" table="t_user">
 			<id name="id" column="id">
@@ -72,7 +72,7 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 * 创建Hibernate配置文件（即连接数据库）：
 
 	<?xml version="1.0" encoding="UTF--‐8"?>
-	<!DOCTYPE hibernate--‐configuration PUBLIC "--‐//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate--‐configuration--‐3.0.dtd">
+	<!DOCTYPE hibernate--‐configuration PUBLIC "-/Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate--‐configuration--‐3.0.dtd">
 	<hibernate-configuration>
 		<session-factory>
 			//连接数据库
@@ -102,7 +102,8 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 			<mapping resource="com/kaishengit/pojo/user.hbm.xml"/>//连接类的ORM
 			
 		</session-factory>
-	</hibernate-configuration>
+		
+	</hibernate-configuration >
 
 * 运行测试：
 
@@ -214,9 +215,9 @@ clear方法和flush方法：
 <img src="http://jaypeeonline.net/images/blog_update.png" title="持续更新中...."/>
 
 
-[nyflxp] http://nieyafei.tk  "Nyflxp"
+[nyflxp]： http://nieyafei.tk  "Nyflxp"
 [1]:    {{ page.url}}  ({{ page.title }})
-[jar]		http://www.hibernate.org/
-[Hibernate] http://www.hibernate.org/
-[PenJpa]	http://openjpa.apache.org/
-[mybatis]	https://code.google.com/p/mybatis/
+[jar]：		http://www.hibernate.org/
+[Hibernate]： http://www.hibernate.org/
+[PenJpa]：	http://openjpa.apache.org/
+[mybatis]：	https://code.google.com/p/mybatis/
