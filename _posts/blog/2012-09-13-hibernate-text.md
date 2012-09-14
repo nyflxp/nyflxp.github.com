@@ -38,7 +38,7 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 *4.创建Hibernate配置文件（hibernate.cfg.xml）
 *5.测试运行
 
-导入[jar]包之后,创建持久化类(pojo):
+导入[jar][]包之后,创建持久化类(pojo):
 
 * pojo:Plain Ordinary Java Object(无格式的Java对象)
 * Hibernate对pojo的要求：
@@ -175,7 +175,7 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 
 * 三种状态的转换：
 
-<img src="http://p.blog.csdn.net/images/p-blog-csdn-net/lenotang/hibernate3-ch3-1.gif"/>
+<img src="http://p.blog.csdn.net/images/p_blog_csdn_net/lenotang/hibernate3_ch3_1.gif"/>
 
 load和get方法：
 
@@ -216,8 +216,8 @@ clear方法和flush方法：
 
 
 [nyflxp]： http://nieyafei.tk  "Nyflxp"
-[1]:    {{ page.url}}  ({{ page.title }})
 [jar]：		http://www.hibernate.org/ "jar"
 [Hibernate]： http://www.hibernate.org/ "Hibernate"
 [PenJpa]：	http://openjpa.apache.org/ "PenJpa"
 [mybatis]：	https://code.google.com/p/mybatis/ "mybatis"
+[1]:    {{ page.url}}  ({{ page.title }})
