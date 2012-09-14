@@ -19,24 +19,24 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 
 ##ORM框架
 
-* <a href="http://www.hibernate.org/">Hibernate</a>
-* <a href="http://openjpa.apache.org/">PenJpa</a>
-* <a href="https://code.google.com/p/mybatis/">mybatis</a>
+* Hibernate
+* PenJpa
+* mybatis
 
 优点：
 
-*缺乏乏味的代码
-*更加面向对象的设计
-*更好的移植性
-*更好的性能
+* 缺乏乏味的代码
+* 更加面向对象的设计
+* 更好的移植性
+* 更好的性能
 
 ##开始使用Hibernate
 
-*1.加入Hibernate jar包
-*2.创建持久化类（pojo）
-*3.创建映射文件（XXX.hbm.xml）
-*4.创建Hibernate配置文件（hibernate.cfg.xml）
-*5.测试运行
+* 1.加入Hibernate jar包
+* 2.创建持久化类（pojo）
+* 3.创建映射文件（XXX.hbm.xml）
+* 4.创建Hibernate配置文件（hibernate.cfg.xml）
+* 5.测试运行
 
 导入<a href="http://www.hibernate.org/">jar</a>包之后,创建持久化类(pojo):
 
