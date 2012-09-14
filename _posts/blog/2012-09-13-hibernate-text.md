@@ -55,8 +55,8 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 * 在xml文件中添加映射信息：
 
 	<?xmlversion="1.0"encoding="UTF-8"?>
-	<!DOCTYPEhibernate-mappingPUBLIC"-/Hibernate/HibernateMappingDTD3.0//EN""http://hibernate.sourceforge.net/hibernate--‐mapping--‐3.0.dtd">
-	<hibernate--‐mapping package="com.kaishengit.pojo">
+	<!DOCTYPEhibernate-mappingPUBLIC"-/Hibernate/HibernateMappingDTD3.0//EN""http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	<hibernate-mapping package="com.kaishengit.pojo">
 	  <class name="User" table="t_user">
 			<id name="id" column="id">
 				<generator class="native"></generator>
@@ -76,7 +76,7 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 	<hibernate-configuration>
 		<session-factory>
 			//连接数据库
-			<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+			<property name="connection.driver-class">com.mysql.jdbc.Driver</property>
 			<property name="connection.url">jdbc:mysql:///mydb</property>
 			<property name="connection.username">root</property>//用户名
 			<property name="connection.password">root</property>//密码
