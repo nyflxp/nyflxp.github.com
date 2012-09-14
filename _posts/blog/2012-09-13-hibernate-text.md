@@ -19,9 +19,9 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 
 ##ORM框架
 
-* [Hibernate][2]
-* [PenJpa][3]
-* [mybatis][5]
+* <a href="http://www.hibernate.org/">Hibernate</a>
+* <a href="http://openjpa.apache.org/">PenJpa</a>
+* <a href="https://code.google.com/p/mybatis/">mybatis</a>
 
 优点：
 
@@ -38,7 +38,7 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 *4.创建Hibernate配置文件（hibernate.cfg.xml）
 *5.测试运行
 
-导入[jar][4]包之后,创建持久化类(pojo):
+导入<a href="http://www.hibernate.org/">jar</a>包之后,创建持久化类(pojo):
 
 * pojo:Plain Ordinary Java Object(无格式的Java对象)
 * Hibernate对pojo的要求：
@@ -68,6 +68,7 @@ Hibernate的核心接口一共有6个，分别为:Session、SessionFactory、Tra
 	</hibernate-mapping>
 
 * 创建Hibernate配置文件（即连接数据库）：
+
 	<hibernate-configuration>
 		<session-factory>
 			//连接数据库
@@ -209,10 +210,4 @@ clear方法和flush方法：
 
 <img src="http://jaypeeonline.net/images/blog_update.png" title="持续更新中...."/>
 
-
-[nyflxp]： http://nieyafei.tk  "Nyflxp"
-[4]：		http://www.hibernate.org/ "jar"
-[2]： http://www.hibernate.org/ "Hibernate"
-[3]：	http://openjpa.apache.org/ "PenJpa"
-[5]：	https://code.google.com/p/mybatis/ "mybatis"
 [1]:    {{ page.url}}  ({{ page.title }})
