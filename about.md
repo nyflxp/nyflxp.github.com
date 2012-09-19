@@ -4,7 +4,7 @@ title: About Nyflxp
 ---
 # [nyflxp][]
 
-您好，我是[nyflxp][]，欢迎光临我的博客，我是一名前端开发攻城师，目前是一名大四学生，就读于<a href="http://www.hpu.edu.cn">河南理工大学</a>
+您好，我是[nyflxp][]，欢迎光临我的博客，我是一名java开发工程师，菜鸟前端开发攻城师，目前是一名大四学生，就读于<a href="http://www.hpu.edu.cn">河南理工大学</a>
 
 博客仍在不断完善中，感谢关注，如有问题可以给我<a href="" title="邮箱" onclick="alert('nyflxp 在 Gmail，你懂得！');return false;">eMail</a>，或者在<a href="http://weibo.com/nyfhome" title="我的闲言碎语" target="_blank" class="external">微博</a>关注我。
 
