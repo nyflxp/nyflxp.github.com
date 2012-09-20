@@ -25,8 +25,9 @@ Spring是一个轻量级的控制反转(IoC)和面向切面(AOP)的容器框架�
 <img src="http://static.springframework.org/images/spring2-bean-container-magic.png" width="400px;"/>
 
 * 配置applicationContext.xml:
+* 
 配置文件：
-  	<?xml version="1.0" encoding="UTF-8"?>
+
 	<beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
