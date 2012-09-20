@@ -28,10 +28,10 @@ Spring是一个轻量级的控制反转(IoC)和面向切面(AOP)的容器框架�
 
   	<?xml version="1.0" encoding="UTF-8"?>
 	<beans xmlns="http://www.springframework.org/schema/beans"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:schemaLocation="http://www.springframework.org/schema/beans
-		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
-		<bean id="user" class="com.bean.pojo.User"></bean>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<bean id="user" class="com.bean.pojo.User"></bean>
 	</beans>
 
 class是对象的完全限定名，id是对象的名字（首字母小写）
