@@ -24,8 +24,8 @@ Spring是一个轻量级的控制反转(IoC)和面向切面(AOP)的容器框架�
 
 <img src="http://static.springframework.org/images/spring2-bean-container-magic.png" width="400px;"/>
 
-* 配置applicationContext.xml
-
+* 配置applicationContext.xml:
+配置文件：
   	<?xml version="1.0" encoding="UTF-8"?>
 	<beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -52,9 +52,9 @@ class是对象的完全限定名，id是对象的名字（首字母小写）
 
 相对于BeanFactory，现在的ApplicationContext具有一些特性：
 
-* 1.提供了文本解析工具，包括 I18N 国际化；
-* 2.提供了载入文件资源的通用方法；
-* 3.可以向注册为监听器的 Bean发送事件。
+* 1.提供了文本解析工具，包括 I18N 国际化
+* 2.提供了载入文件资源的通用方法
+* 3.可以向注册为监听器的 Bean发送事件
 
 但是他们还是有区别的：
 
