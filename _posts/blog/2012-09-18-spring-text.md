@@ -18,20 +18,19 @@ Spring是一个轻量级的控制反转(IoC)和面向切面(AOP)的容器框架�
 * 容器——Spring包含并管理应用对象的配置和生命周期，在这个意义上它是一种容器，你可以配置你的每个bean如何被创建——基于一个可配置原型（prototype），你的bean可以创建一个单独的实例或者每次需要时都生成一个新的实例——以及它们是如何相互关联的。然而，Spring不应该被混同于传统的重量级的EJB容器，它们经常是庞大与笨重的，难以使用。
 * 框架——Spring可以将简单的组件配置、组合成为复杂的应用。在Spring中，应用对象被声明式地组合，典型地是在一个XML文件里。Spring也提供了很多基础功能（事务管理、持久化框架集成等等），将应用逻辑的开发留给了你。
 
-<img width="400px" href="http://www.javawind.net/help/html/spring_ref_2.0/html/images/spring-overview.png"/>
+<img width="400px" src="http://www.javawind.net/help/html/spring_ref_2.0/html/images/spring-overview.png"/>
 
 ##Spring管理Bean
 
-<img href="http://static.springframework.org/images/spring2-bean-container-magic.png" width="400px;"/>
+<img src="http://static.springframework.org/images/spring2-bean-container-magic.png" width="400px;"/>
 
 * 配置applicationContext.xml
 
-  <?xml version="1.0" encoding="UTF-8"?>
+  	<?xml version="1.0" encoding="UTF-8"?>
 	<beans xmlns="http://www.springframework.org/schema/beans"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xsi:schemaLocation="http://www.springframework.org/schema/beans
 		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
-		
 		<bean id="user" class="com.bean.pojo.User"></bean>
 	</beans>
 
